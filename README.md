@@ -11,6 +11,9 @@ In general, the scripts are prepared to be downloaded and manually edited. There
 - `AS_boxplot.R`: Boxplot of PSI values for alternative splicing events. Includes a Wilcoxon test for differential splicing between all of the groups.
 - `AS_kmeans.R`: K-means clustering of PSI values for alternative splicing events.
 - `AS_PCA-heatmap-UMAP.R`: PCA, heatmap, and UMAP plots for alternative splicing data. Allows to filter events by overall variance. Specific event and sample-lists can be provided.
+- `rmats_summary.R`: Script to create basic plots (PCAs and volcanos) and tables listing all of events (both tables by event type and full tables) from multiple experiments.
+    
+    It expects an `rmats` directory containing the output of rMATS experiments (there can be many), named `rmats_<StudyGroup>_<ControlGroup>`. Inside, it is expected to be a folder named `rmats_output`, containing all of the output files.
 
 
 ## Gene expression plots
